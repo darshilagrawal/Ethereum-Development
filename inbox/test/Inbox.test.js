@@ -15,6 +15,6 @@ class Car{
 describe('Car',() => {
   it('parking enabled', () => {
     const car = new Car;
-    assert.equal(car.park(), 'stopped');
+    assert.equal(car.park(), 'stoooooopped');
   });
 })
