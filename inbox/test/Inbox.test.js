@@ -12,9 +12,16 @@ class Car{
   }
 }
 
+let car;
+beforeEach(() => {
+  car=new Car;
+})
 describe('Car',() => {
   it('parking enabled', () => {
-    const car = new Car;
-    assert.equal(car.park(), 'stoooooopped');
+  assert.equal(car.park(), 'stopped');
+  });
+
+  it('Driving Functionality',() => {
+    assert.equal(car.drive(),'vroom')
   });
 })
